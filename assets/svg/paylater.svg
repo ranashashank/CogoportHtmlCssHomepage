@@ -1,0 +1,46 @@
+<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 14"
+                    width="60"
+                    height="60"
+                    role="img"
+                    src="/iccpaylater.svg"
+                  >
+                    <path
+                      fill="#fff"
+                      stroke="#060606"
+                      stroke-miterlimit="10"
+                      stroke-width="0.24"
+                      d="M8.812 1.214h-5.16c-.636 0-1.152.516-1.152 1.152v9.268c0 .636.516 1.152 1.152 1.152h5.16c.636 0 1.152-.516 1.152-1.152V2.366c0-.636-.516-1.152-1.152-1.152Z"
+                    ></path>
+                    <path
+                      stroke="#060606"
+                      stroke-miterlimit="10"
+                      stroke-width="0.24"
+                      d="M2.5 2.954h7.464M2.5 11.383h7.464"
+                    ></path>
+                    <path
+                      fill="#FBDC00"
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="0.269"
+                      d="M8.103 10.492a3.397 3.397 0 1 0 0-6.795 3.397 3.397 0 0 0 0 6.795Z"
+                    ></path>
+                    <path
+                      stroke="#060606"
+                      stroke-miterlimit="10"
+                      stroke-width="0.24"
+                      d="M5.215 5.31H3.941m-.358 0h-.354m.354 1.925h-.354m.354 1.847h-.354m1.647-2.798H3.23m1.588.951h-.877m1.437 1.847H3.94m.833-.948H3.229"
+                    ></path>
+                    <path
+                      fill="#000"
+                      d="M8.434 4.49H7.88v1.175h.554V4.49Zm0 3.942H7.88V9.51h.554V8.432Z"
+                    ></path>
+                    <path
+                      stroke="#000"
+                      stroke-miterlimit="10"
+                      stroke-width="0.24"
+                      d="M9.348 6.297V5.75l-.262-.226H7.204l-.238.285v.934l.214.217h1.863l.298.222v1.08l-.286.324h-1.78l-.25-.166v-.546"
+                    ></path>
+                  </svg>
