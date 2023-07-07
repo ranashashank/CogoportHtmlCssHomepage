@@ -13,13 +13,21 @@ window.addEventListener("scroll", changeBg);
 
 let togleMenu = 0;
 function toggleMenu() {
-  togleMenu = !togleMenu;
-  // console.log(togleMenu);
-
   let navbar_mobile = document.getElementById("navbar-mobile");
+  togleMenu = !togleMenu;
   if (togleMenu) {
     navbar_mobile.style.display = "block";
   } else {
     navbar_mobile.style.display = "none";
   }
+  console.log(window.innerWidth);
 }
+
+function tocheckTogglemenu() {
+  if (togleMenu && window.innerWidth > 800) {
+    let navbar_mobile = document.getElementById("navbar-mobile");
+    navbar_mobile.style.display = "none";
+    togleMenu = false;
+  }
+}
+window.addEventListener("resize", tocheckTogglemenu);
