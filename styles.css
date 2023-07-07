@@ -36,7 +36,7 @@ body {
   box-sizing: border-box;
   position: relative;
   top: 0;
-  z-index: 1010;
+  z-index: 1000;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -99,6 +99,9 @@ body {
   font-weight: 500;
   color: var(--font-color-heading);
   background: #fbdc00;
+}
+.menu-mobile {
+  display: none;
 }
 /* ----on-scroll-change-navbar---- */
 .navbar-active {
@@ -1429,4 +1432,323 @@ body {
 .footer-socialmedia > a {
   color: var(--font-color-link);
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  /* ---alert-container------ */
+  .noti-container {
+    height: 48px;
+  }
+  .noti-content {
+    align-self: center;
+    margin: 0;
+  }
+  /* ---navbar------ */
+  .menu-mobile {
+    display: block;
+  }
+  .menu-button-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0;
+    margin-right: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .logo {
+    position: absolute;
+    left: 40px;
+  }
+  .nav-bar-grp {
+    display: none;
+  }
+  .auth-btn {
+    display: none;
+  }
+  /* ---section1------ */
+  .section1-wrap {
+    flex-direction: column-reverse;
+    height: 552px;
+    width: 100%;
+  }
+  .sec1-text {
+    justify-content: left;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .sec1-text > h1 {
+    font-size: 24px;
+  }
+  .sec1-text-para {
+    font-size: 16 px;
+  }
+  .sec1-text-para > br {
+    content: "";
+  }
+  .sec1-video {
+    width: 100%;
+  }
+  /* -----section-2------ */
+  .section2-container {
+    width: 100%;
+  }
+  .sec2-wrapper {
+    padding: 0px;
+  }
+  .sec2-ele {
+    width: 50%;
+    text-align: center;
+  }
+  .sec2-counth2 {
+    font-size: 24px;
+  }
+  .sec2-ele > h4 {
+    font-size: 14px;
+  }
+
+  /* -----section-3------- */
+  .section3-container {
+    margin-bottom: 32px;
+  }
+  .sec3-desccontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100% !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+  .sec3-textcontainer > h2 {
+    font-size: 24px;
+  }
+  .sec3-imgcontainer {
+    width: 320px;
+  }
+  .sec3-mapimg {
+    width: 100%;
+  }
+
+  /* ---section 4------ */
+  .section4-container {
+    width: 100%;
+  }
+  .section4-container > h3 {
+    padding: 0;
+    margin-bottom: 0;
+    text-align: inherit;
+    font-size: 20px;
+  }
+  .sec4-product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec4-product > h4 {
+    width: 100%;
+    margin-right: 0;
+    font-size: 16px;
+  }
+  .card-list {
+    justify-content: center;
+  }
+  /*-----section 5--------- */
+  .section5-container {
+    margin-bottom: 32px;
+  }
+  .section5-container > h3 {
+    font-size: 20px;
+  }
+  /* ---section 6---- */
+  .section6-container {
+    margin-bottom: 32px;
+  }
+  .section6-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sec6-headdiv {
+    padding: 10px 0;
+  }
+  .sec6-headdiv > h3 {
+    font-size: 20px;
+  }
+
+  /* ---section 7----- */
+  .section7-container {
+    width: 100%;
+  }
+  .sec7-mainbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .sec7-mainbox > h3 {
+    max-width: 258px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .sec7-btn-grp {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .sec7-btn1 {
+    margin-bottom: 16px !important;
+    width: 200px;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+  }
+  .sec7-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec7-imagecontainer {
+    margin-top: 10px;
+    order: -1;
+  }
+  .sec7-imagecontainer > img {
+    box-sizing: border-box;
+    width: 280px;
+    height: auto;
+    margin-top: 10px;
+  }
+  .linearrow-1,
+  .linearrow-2,
+  .linearrow-3,
+  .linearrow-4 {
+    display: none;
+  }
+  .sec7-stage1 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .sec7-stage2 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .sec7-stage3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 65px;
+  }
+  .sec7-stage4 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* ---section 8---- */
+  .section8 {
+    padding: initial !important;
+    margin-bottom: 32px;
+  }
+  .section8-container {
+    width: 100%;
+  }
+  .sec8-heading {
+    font-size: 20px;
+  }
+  .sec8-items-container {
+    justify-content: center;
+  }
+  /* -----section 9------ */
+  .section9-container {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .sec9-about-container {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec9-text-container {
+    box-sizing: border-box;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .sec9-about-container > h2 {
+    font-size: 24px;
+    box-sizing: border-box;
+  }
+  .sec9-about-container > p {
+    font-size: 24px;
+    box-sizing: border-box;
+  }
+  .sec9-img-container {
+    width: 100%;
+    order: -1;
+  }
+
+  /* ------------section 10----------- */
+  .sec10-knowmore-box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .knowmore-textbox {
+    padding: 10px 0;
+  }
+  .knowmore-textbox > h3 {
+    font-size: 20px;
+  }
+
+  /* ----section 11----------- */
+  .sec11-blogs-container {
+    width: 100%;
+  }
+  .sec11-cards-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec11-card {
+    width: auto;
+  }
+
+  /* -----section 12----------- */
+  .sec12-img-container {
+    display: none;
+  }
+  .sec12-subsc-container {
+    padding: 0 16px;
+    text-align: center;
+  }
+  .sec12-subsc-container > h3 {
+    font-size: 20px;
+  }
+
+  /* ---more features--- */
+  .more-features-container {
+    display: none;
+  }
+  /* --------footer-ports-info---------- */
+  .footer-portsinfo-container {
+    display: none;
+  }
+  /* ----bottom-footer----- */
+  .bottom-footer-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .bottom-footer-left > ul {
+    display: none;
+  }
+  .bottom-footer-right {
+    flex-direction: row-reverse;
+  }
+  .footer-socialmedia {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
