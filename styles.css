@@ -100,6 +100,9 @@ body {
   color: var(--font-color-heading);
   background: #fbdc00;
 }
+.navbar-mobile {
+  display: none;
+}
 .menu-mobile {
   display: none;
 }
@@ -1443,9 +1446,11 @@ body {
     margin: 0;
   }
   /* ---navbar------ */
+
   .menu-mobile {
     display: block;
   }
+
   .menu-button-mobile {
     display: flex;
     align-items: center;
@@ -1457,16 +1462,104 @@ body {
     background-color: transparent;
     border: none;
   }
-
-  .logo {
-    position: absolute;
-    left: 40px;
+  .navbar-mobile {
+    box-sizing: border-box;
+    position: sticky;
+    top: var(--layout-topbar);
+    z-index: 999;
+    height: calc(100vh - var(--layout-topbar));
+    background-color: #fbdc00;
+    width: 100%;
+    overflow-y: scroll;
+    left: 0;
   }
+  .nav-mobile-inner {
+    position: sticky;
+  }
+  .nav-mobile-list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+  .nav-mobile-item {
+    box-sizing: border-box;
+    padding: 16px;
+    overflow-y: scroll;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+  }
+  .nav-mobile-item-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    background: none;
+    border: none;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 14px !important;
+    font-weight: 1000 !important;
+  }
+  .nav-mobile-item-button > h3 {
+    box-sizing: border-box;
+    font-family: var(--font-family-heading);
+    color: var(--font-color-heading);
+    line-height: 1.2;
+    font-size: 20px;
+    margin: 0 20px 0 0;
+  }
+  .auth-mobile-container {
+    display: flex;
+  }
+  .auth-mobile-btn {
+    padding: 16px;
+  }
+  .auth-register-signup-mobile {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-family: var(--font-family);
+    justify-content: center;
+    line-height: 1.2;
+    border-radius: 8px;
+    min-width: 72px;
+    height: 36px;
+    padding: 4px 16px;
+    color: #fff;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+  .auth-register-signin-mobile {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 4px;
+    font-size: 14px;
+    color: #000 !important;
+  }
+
   .nav-bar-grp {
     display: none;
   }
-  .auth-btn {
+  .auth-btn-grp {
     display: none;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
   }
   /* ---section1------ */
   .section1-wrap {
