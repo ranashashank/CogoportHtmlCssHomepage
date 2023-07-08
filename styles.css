@@ -1353,6 +1353,9 @@ body {
   color: #ee3425;
   text-decoration: underline;
 }
+.navbar-mobile-2 {
+  display: none;
+}
 /* ----------bottom-footer---------- */
 .bottom-footer-container {
   box-sizing: border-box;
@@ -1834,6 +1837,11 @@ body {
   .bottom-footer-container {
     flex-direction: column-reverse;
     align-items: flex-start;
+    padding: 16px;
+  }
+  .footer-copyright {
+    font-size: 12px;
+    font-weight: lighter !important;
   }
   .bottom-footer-left > ul {
     display: none;
@@ -1844,5 +1852,14 @@ body {
   .footer-socialmedia {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .navbar-mobile-2 {
+    display: block;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: #fbdc00;
+    width: 100%;
+    overflow-y: scroll;
+    left: 0;
   }
 }
